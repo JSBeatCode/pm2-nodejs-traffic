@@ -1,0 +1,17 @@
+-- phase1
+1. npm init, npm install
+2. pm2 install
+3. calmem.js
+4. app1~3.js 코딩
+5. ecosystem.config.js
+6. pm2 start
+7. pm2 status
+8. pm2 monit
+9. node localTestJS
+
+-- phase2
+9. npm i -g artillery
+10. test.yaml 작성
+11. artillery run --output report.json test.yaml
+12. artillery report report.json
+13. 생성된 html 파일 열기

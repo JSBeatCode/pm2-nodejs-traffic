@@ -1,0 +1,43 @@
+# test.yaml
+config:
+  target: 'http://localhost:3000'
+  phases:
+    - duration: 60            # Test duration in seconds
+      arrivalRate: 10          # Generate 10 virtual users per second
+      rampTo: 10               # Number of users to reach (10 per second)
+      name: "Test phase 1"
+      # Total virtual users = duration x arrivalRate = 60s x 10 = 600 users
+
+scenarios:
+  - name: "Homepage"
+    flow:
+      - get:
+          url: "/"
+
+  # - name: "Fetch Data"
+  #   flow:
+  #     - get:
+  #         url: "/api/data"
+  #
+  # - name: "User Login"
+  #   flow:
+  #     - post:
+  #         url: "/login"
+  #         json:
+  #           username: "testuser"
+  #           password: "testpassword"
+  #
+  # - name: "View Profile"
+  #   flow:
+  #     - get:
+  #         url: "/profile"
+  #         headers:
+  #           Authorization: "Bearer <token>"  # Replace with actual token during testing
+  #
+  # - name: "Post Data"
+  #   flow:
+  #     - post:
+  #         url: "/api/data"
+  #         json:
+  #           key1: "value1"
+  #           key2: "value2"
