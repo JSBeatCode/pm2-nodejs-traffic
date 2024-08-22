@@ -6,7 +6,10 @@ const port = 3000;
 app.get('/', (req, res) => {
     const now = new Date();
     const curDate = now.toLocaleTimeString() + '.' + now.getMilliseconds()
-    console.log(curDate)
+    const memWrite = calmem.printMemoryUsage();
+    console.log(curDate);
+	console.log('  ' + memWrite.metricsMemoryUsage);
+	console.log('  ' + memWrite.metricsAppMemoryUsage);
     res.send('Hello, World! 22222222222! ' + curDate);
 });
 

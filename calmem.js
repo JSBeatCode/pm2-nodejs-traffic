@@ -36,7 +36,7 @@ function printCpuUsage() {
     const endMeasure = getCpuTimes();
     const cpuUsage = calculateCpuUsage(startMeasure, endMeasure);
 
-    console.log(`CPU Usage: ${cpuUsage}%`);
+    console.log(`  CPU Usage: ${cpuUsage}%`);
   }, 1000);
   
 }
