@@ -9,6 +9,9 @@ app.get('/', (req, res) => {
     const memWrite = calmem.printMemoryUsage();
     console.log(curDate);
 	console.log('  ' + memWrite.metricsMemoryUsage);
+    console.log('  ' + memWrite.metricsTotalMemory);
+    console.log('  ' + memWrite.metricsUsedMemory);
+    console.log('  ' + memWrite.metricsFreeMemory);
 	console.log('  ' + memWrite.metricsAppMemoryUsage);
     res.send('Hello, World! 11111111111! ' + curDate);
 });
