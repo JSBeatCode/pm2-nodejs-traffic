@@ -94,8 +94,6 @@ function printMemoryUsage() {
 // printMemoryUsage();
 
 module.exports = {
-  printMemoryUsage,
-  printCpuUsage,
-  calculateCpuUsage,
-  getCpuTimes
+  printMemoryUsage
+  , printCpuUsage
 }

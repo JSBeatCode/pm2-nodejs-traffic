@@ -4,12 +4,12 @@
 3. calmem.js
 4. app1~3.js 코딩
 5. ecosystem.config.js
-6. localTestJS 코딩
+# 6. localTestJS 코딩
 7. app1 테스트
 8. pm2 start
 9. pm2 status
 10. pm2 monit
-11. node localTestJS
+# 11. node localTestJS
 
 -- phase2
 1. npm i -g artillery

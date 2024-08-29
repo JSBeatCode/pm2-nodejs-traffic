@@ -2,8 +2,8 @@
 config:
   target: 'http://localhost:3000'
   phases:
-    - duration: 60            # Test duration in seconds
-      arrivalRate: 1000          # Generate 10 virtual users per second
+    - duration: 30            # Test duration in seconds
+      arrivalRate: 600          # Generate 10 virtual users per second
       rampTo: 10               # Number of users to reach (10 per second)
       name: "Test phase 1"
       # Total virtual users = duration x arrivalRate = 60s x 10 = 600 users
