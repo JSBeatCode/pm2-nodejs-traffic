@@ -2,18 +2,19 @@
 1. npm init, npm install
 2. pm2 install
 3. calmem.js
-4. app1~3.js 코딩
+# 4. app1~3.js 코딩
+4. app.js 코딩
 5. ecosystem.config.js
 # 6. localTestJS 코딩
-7. app1 테스트
-8. pm2 start
-9. pm2 status
-10. pm2 monit
+# 7. app single 테스트
 # 11. node localTestJS
 
 -- phase2
 1. npm i -g artillery
 2. test.yaml 작성
+3. pm2 start
+4. pm2 status
+5. pm2 monit
 3. artillery run --output report.json test.yaml
 4. artillery report report.json
 5. 생성된 html 파일 열기
